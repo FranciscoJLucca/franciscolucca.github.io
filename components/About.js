@@ -1,4 +1,5 @@
-import { Flex, Heading, HStack, IconButton, Image, Text, VStack, Stack, Divider, Link } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Flex, Heading, HStack, IconButton, Image, Text, VStack, Stack, Divider, Link, Spacer } from "@chakra-ui/react";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai'
 
 const About = () => {
@@ -21,27 +22,56 @@ const About = () => {
             size="xl"
           />
           <IconButton
-            aria-label="Github"
+            aria-label="Email"
             icon={<AiFillMail size="50px" />}
             onClick={() => { window.open('mailto:franciscojoaoluccaneto@gmail.com') }}
           />
           <IconButton
-            aria-label="Github"
+            aria-label="Linkedin"
             icon={<AiFillLinkedin size="50px" />}
             onClick={() => { window.open('https://www.linkedin.com/in/francisco-jo%C3%A3o-lucca-neto/') }}
           />
         </HStack>
       </Flex>
-      <Flex height="100vh" width="110vw" flexDirection="column" justify="center" align="flex-start">
+      <Flex height="100vh" width="100vw" flexDirection="column" justify="center" align="flex-start">
         <Heading>
           Me Myself and I
         </Heading>
-        <Text textAlign="justify" maxW="45vw" maxH="45vh" fontSize="2xl">
-          Oi, como você está ? Eu espero que esteja tudo bem. Eu sou o Francisco João Lucca Neto, comecei a estudar programação em 2018
-          que tambem foi o ano que comecei a cursar Engenharia de Computação na <Link href="https://www.pucrs.br/en/" isExternal="true">PUCRS</Link>.
-          A primeira linguagem que tive contato foi C e acredite em mim, foi terrivel. Hoje curso Engenharia de Software, tambem na PUCRS, e trabalho
-          no LIS (Laboratorio de Inovação e Software). Atualmente tenho me enteressado muito com tecnologias de DevOps, especialente AWS.
+        <Text textAlign="justify" maxW="45vw" maxH="45vh" fontSize="xl" pt="10px">
+          Hi how are you ? I hope everything is fine. I'm Francisco João Lucca Neto. I started studying programming in 2018
+          which was also the year I started studying Computer Engineering at <Link href="https://www.pucrs.br/en/" isExternal="true">PUCRS <ExternalLinkIcon /></Link>.
+          The first language I had contact with was C and believe me it was terrible. Today I study Software Engineering, also at PUCRS, and work
+          at LIS (Laboratory of Innovation and Software). Currently I'm very interested in DevOps technologies, especially AWS.
         </Text>
+        <HStack pt="40px" w="50vw" maxW="45vw">
+          <VStack align="flex-start">
+            <Heading size="lg">Interest</Heading>
+            <Text fontSize="lg">
+              <li>
+                Software Engineering
+              </li>
+            </Text>
+            <Text fontSize="lg">
+              <li>
+                DevOps
+              </li>
+            </Text>
+          </VStack>
+          <Spacer />
+          <VStack align="flex-start">
+            <Heading size="lg">Education</Heading>
+            <Text fontSize="lg">
+              <li>
+                mar/2018 - jul/2018 Computer Engineering (PUCRS)
+              </li>
+            </Text>
+            <Text fontSize="lg">
+              <li>
+                ago/2018 - now Software Engineering (PUCRS)
+              </li>
+            </Text>
+          </VStack>
+        </HStack>
       </Flex>
     </Stack>
   );
