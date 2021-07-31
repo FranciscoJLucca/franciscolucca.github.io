@@ -2,9 +2,9 @@ import { Flex, Text, Heading, Grid, Box, Spacer } from "@chakra-ui/react";
 import { FaAws, FaDocker, FaGit, FaGitAlt, FaJava, FaJs } from "react-icons/fa";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
 
-const Skills = () => {
+function Skills() {
   return (
-    <Flex width="100vw" height="100vh" bg="gray.300" height="100vh" flexDir="column" align="center">
+    <Flex width="100vw" height="100vh" height="100vh" flexDir="column" align="center">
       <Heading fontWeight="normal" pt="15px">Skills</Heading>
       <Grid
         height="100vh"
@@ -42,7 +42,7 @@ const Skills = () => {
 
         <Flex gridArea="java" width="20vw" height="20vh" flexDir="column" justifyContent="center" alignItems="center" >
           <FaJava size="100px" />
-          <Heading sTruncated>Java</Heading>
+          <Heading isTruncated>Java</Heading>
           <Text pt="5px" isTruncated>Maven, JUnit, Spring</Text>
         </Flex>
 
