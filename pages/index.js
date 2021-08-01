@@ -8,6 +8,7 @@ function Index() {
     <VStack p={5}>
       <Header />
       <About />
+      <Skills />
     </VStack>
   )
 }
