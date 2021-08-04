@@ -3,7 +3,6 @@ import { Flex, Heading, Box, IconButton, Image, Text, VStack, Stack, HStack, Lin
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai'
 
 function About() {
-
   return (
     <Stack>
       <Flex

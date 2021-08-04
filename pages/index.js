@@ -1,5 +1,6 @@
 import { useColorMode, VStack } from "@chakra-ui/react";
 import About from "../components/About/About";
+import Experiences from "../components/Experiences/Experiences";
 import Header from "../components/Header/Header";
 import Skills from "../components/Skills/Skills";
 
@@ -9,6 +10,7 @@ function Index() {
       <Header />
       <About />
       <Skills />
+      <Experiences />
     </VStack>
   )
 }
